@@ -1,0 +1,20 @@
+// Question 3
+#include"main.h"
+
+
+
+void TriParSelection(int tab[], int taille)
+{
+    for (int i = 0; i < taille - 1; i++) {
+        int min_index = i;
+        for (int j = i + 1; j < taille; j++) {
+            if (tab[j] < tab[min_index]) {
+                min_index = j;
+            }
+        }
+        // Échange des éléments pour placer le minimum à la position i
+        int temp = tab[i];
+        tab[i] = tab[min_index];
+        tab[min_index] = temp;
+    }
+}
