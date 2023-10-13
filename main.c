@@ -8,7 +8,7 @@ int main() {
 
     int *tab = (int *)malloc(taille * sizeof(int)); // Allocation de mémoire pour le tableau
 
-   remplirTableauAvecEntiersAliqoire(tab, taille, 1000000);// Remplissage du tableau avec des valeurs aléatoires
+   remplirTableauAvecEntiersAliaoire(tab, taille, 1000000);// Remplissage du tableau avec des valeurs aléatoires
 
     // Affichage du tableau (facultatif) avant le trie
     printf("The generated array :\n");

@@ -1,10 +1,13 @@
+
 # Pratical-exercises-algorithm
-This project contains C programming exercises and their solutions. It demonstrates the following concepts:
+
+This repository contains C programming exercises and their solutions. It demonstrates the following concepts:
 
 1. Generating random integers and filling an array with them.
 2. Sorting an array using the selection sort algorithm.
 
 ## Table of Contents
+
 
 - [Pratical-exercises-algorithm](#pratical-exercises-algorithm)
   - [Table of Contents](#table-of-contents)
@@ -23,6 +26,7 @@ This project contains C programming exercises and their solutions. It demonstrat
 ## Exercise 1: Random Array Generation
 
 ### Problem Statement
+
 Write a C function that generates random integers and fills an array with them.
 
 - Function Prototype: `void remplirTableauAvecEntiersAliqoire(int tab[], int taille, int ValeurMax)`.
@@ -35,15 +39,22 @@ Write a C function that generates random integers and fills an array with them.
 
 - `main.h`: Header file containing function prototypes.
 - `fillArray.c`: Implementation of the `remplirTableauAvecEntiersAliqoire` function.
-- `main.c`: The main program that asks the user for the array size, allocates memory, fills the array with random integers, and displays the sorted array.
-
+  
 ### Usage
 
-Compile the code using a C compiler, and run the executable. The program will prompt you to enter the size of the array and then display the sorted array.
+Compile the code using a C compiler, and run the executable or you can use terminal
+Compile and run the code in your terminal:
+
+```bash
+gcc -o main main.c fillArray.c selectionSort.c -lm
+./main
+```
+
 
 ## Exercise 2: Selection Sort
 
 ### Problem Statement
+
 Implement the selection sort algorithm to sort an integer array in ascending order.
 
 - Function Prototype: `void TriParSelection(int tab[], int taille)`.

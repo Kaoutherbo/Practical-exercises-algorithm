@@ -1,7 +1,7 @@
 // Question 1
 #include "main.h"
 
-void remplirTableauAvecEntiersAliqoire(int tab[], int taille, int ValeurMax)
+void remplirTableauAvecEntiersAliaoire(int tab[], int taille, int ValeurMax)
 {
      // Initialisation de la variable aléatoire
     srand(time(NULL));
