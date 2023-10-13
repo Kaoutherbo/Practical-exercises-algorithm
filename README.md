@@ -33,24 +33,19 @@ Write a C function that generates random integers and fills an array with them.
 - `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
 #### Code Explanation
 
-- `main.h`: Header file containing function prototypes.
-- `fillArray.c`:
-#### Purpose:
-This source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
-#### Contents: 
-The file includes the implementation of the `remplirTableauAvecEntiersAliqoire` function. It uses the `rand()` function and the `time(NULL)` function to generate random integers and fill an array with them.
+- **Purpose:** The `fillArray.c` source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
 
-- `main.c`: The main program that asks the user for the array size, allocates memory, fills the array with random integers, and displays the sorted array.
+- **Contents:** The file includes the implementation of the `remplirTableauAvecEntiersAliqoire` function, which uses the `rand()` function and the `time(NULL)` function to generate random integers and fill an array with them.
 
 ### Usage
 
-- Compile the code using a C compiler, and run the executable or you can use terminal to compile and run the files
-##### Compile file :
-
+- Compile the code using a C compiler, and run the executable or you can use `terminal` to compile and run the files.
+  
+**Compile file** :
 ```bash
 gcc -o main main.c fillArray.c selectionSort.c -lm
 ```
-#####  Run file :
+**Run file** :
 ```bash
 ./main
 ```
@@ -79,9 +74,16 @@ Implement the selection sort algorithm to sort an integer array in ascending ord
 
 The selection sort function can be used to sort an integer array in ascending order.
 
-## Project Structure
+## Project Structure :
 
-- `main.h`: Header file containing function prototypes.
-- `fillArray.c`: Implementation of the random array generation function.
-- `selectionSort.c`: Implementation of the selection sort function.
-- `main.c`: The main program that includes the user interface and calls the functions.
+- **main.h:**
+  - **Purpose:** This is a header file that contains function prototypes for functions used in the project. It allows other source files to access these functions without having to define them again.
+
+- **fillArray.c:**
+  - **Purpose:** This source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
+
+- **selectionSort.c:**
+  - **Purpose:** This source file contains the implementation of the `TriParSelection` function, which is responsible for sorting an integer array using the selection sort algorithm.
+
+- **main.c:**
+  - **Purpose:** This is the main program file that acts as the entry point of your program. It includes user interface logic and coordinates the use of the functions defined in the other source files.
