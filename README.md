@@ -6,6 +6,7 @@ This repository contains C programming exercises and their solutions. It demonst
 
 ## Table of Contents
 
+ - [Project Structure](#project-structure)
  - [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
     - [Problem Statement](#problem-statement)
     - [Solution](#solution)
@@ -16,8 +17,22 @@ This repository contains C programming exercises and their solutions. It demonst
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
     - [Usage](#usage-1)
-  - [Project Structure](#project-structure)
 
+## Project Structure :
+
+- **main.h:**
+  - **Purpose:** This is a header file that contains function prototypes for functions used in the project. It allows other source files to access these functions without having to define them again.
+
+- **fillArray.c:**
+  - **Purpose:** This source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
+
+- **selectionSort.c:**
+  - **Purpose:** This source file contains the implementation of the `TriParSelection` function, which is responsible for sorting an integer array using the selection sort algorithm.
+
+- **main.c:**
+  - **Purpose:** This is the main program file that acts as the entry point of your program. It includes user interface logic and coordinates the use of the functions defined in the other source files.
+
+ 
 ## Exercise 1: Random Array Generation
 
 ### Problem Statement
@@ -73,17 +88,3 @@ Implement the selection sort algorithm to sort an integer array in ascending ord
 ### Usage
 
 The selection sort function can be used to sort an integer array in ascending order.
-
-## Project Structure :
-
-- **main.h:**
-  - **Purpose:** This is a header file that contains function prototypes for functions used in the project. It allows other source files to access these functions without having to define them again.
-
-- **fillArray.c:**
-  - **Purpose:** This source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
-
-- **selectionSort.c:**
-  - **Purpose:** This source file contains the implementation of the `TriParSelection` function, which is responsible for sorting an integer array using the selection sort algorithm.
-
-- **main.c:**
-  - **Purpose:** This is the main program file that acts as the entry point of your program. It includes user interface logic and coordinates the use of the functions defined in the other source files.
