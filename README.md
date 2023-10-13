@@ -1,31 +1,18 @@
-<<<<<<< HEAD
+# Practical exercises algorithm
 
-# Pratical-exercises-algorithm
-
-=======
-# Practical-exercises-algorithm
->>>>>>> 07c34dd9a063c54d738121fcec78866a58dd133b
 This repository contains C programming exercises and their solutions. It demonstrates the following concepts:
-
 1. Generating random integers and filling an array with them.
 2. Sorting an array using the selection sort algorithm.
 
 ## Table of Contents
 
-<<<<<<< HEAD
-
-- [Pratical-exercises-algorithm](#pratical-exercises-algorithm)
-  - [Table of Contents](#table-of-contents)
-  - [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
-=======
- - [Project Structure](#project-structure)
- - [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
->>>>>>> 07c34dd9a063c54d738121fcec78866a58dd133b
+- [Project Structure](#project-structure)
+- [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
     - [Problem Statement](#problem-statement)
     - [Solution](#solution)
       - [Code Explanation](#code-explanation)
     - [Usage](#usage)
-  - [Exercise 2: Selection Sort](#exercise-2-selection-sort)
+- [Exercise 2: Selection Sort](#exercise-2-selection-sort)
     - [Problem Statement](#problem-statement-1)
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
@@ -55,6 +42,8 @@ Write a C function that generates random integers and fills an array with them.
 - Function Prototype: `void remplirTableauAvecEntiersAliqoire(int tab[], int taille, int ValeurMax)`.
 - Preconditions: `tab` is an array that can contain `taille` integers.
 - Postconditions: `tab` is filled with random integers between 0 (inclusive) and `ValeurMax` (excluding).
+- Use the function `rand()` from: `stdlib.h` The expression `(int)(rand() / ((double)RAND_MAX + 1) * valeur_max)` is used to generate a random integer within the range
+  [0, valeur_max] by scaling the output of the `rand()` function.
 
 ### Solution
 - `fillArray.c` : [fillArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
@@ -62,24 +51,15 @@ Write a C function that generates random integers and fills an array with them.
 - `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
 #### Code Explanation
 
-<<<<<<< HEAD
-- `main.h`: Header file containing function prototypes.
-- `fillArray.c`: Implementation of the `remplirTableauAvecEntiersAliqoire` function.
+- **Purpose:** The `fillArray.c` source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and populates an array with these values. It ensures that the generated numbers fall within a specific range defined by the ValeurMax parameter.
   
-### Usage
-
-Compile the code using a C compiler, and run the executable or you can use terminal
-Compile and run the code in your terminal:
-
-```bash
-gcc -o main main.c fillArray.c selectionSort.c -lm
-./main
-```
-
-=======
-- **Purpose:** The `fillArray.c` source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
-
-- **Contents:** The file includes the implementation of the `remplirTableauAvecEntiersAliqoire` function, which uses the `rand()` function and the `time(NULL)` function to generate random integers and fill an array with them.
+- **Contents:** The file includes the implementation of the `remplirTableauAvecEntiersAliqoire` function.
+  - Let's break down the components of this function:
+    - `rand()`: This function generates random integers between 0 and a predefined maximum value `RAND_MAX`.
+    - `(double)RAND_MAX + 1`: This converts the maximum value `RAND_MAX` to a double and adds 1. The addition of 1 ensures that when you divide `rand()` by this value, you obtain a floating point number between 0.0 (inclusive) and 1.0 (exclusive).
+    - `rand() / ((double)RAND_MAX + 1)`: This part of the expression generates a random floating point number between 0.0 (inclusive) and 1.0 (exclusive). This number serves as a scaling factor for generating values within the desired range.
+    - `Multiplying by ValeurMax`: The random floating-point number from the previous step is then scaled to the desired range. 
+    - `(int)`: Finally, the result is cast to an integer. This conversion removes the decimal part of the floating point number, giving you a random integer within the specified range, in this case [0, ValeurMax).
 
 ### Usage
 
@@ -94,7 +74,6 @@ gcc -o main main.c fillArray.c selectionSort.c -lm
 ./main
 ```
 - The program will prompt you to enter the size of the array and then display the sorted array.
->>>>>>> 07c34dd9a063c54d738121fcec78866a58dd133b
 
 ## Exercise 2: Selection Sort
 
