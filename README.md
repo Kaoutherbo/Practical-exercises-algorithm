@@ -1,4 +1,4 @@
-# Pratical-exercises-algorithm
+# Practical-exercises-algorithm
 This repository contains C programming exercises and their solutions. It demonstrates the following concepts:
 
 1. Generating random integers and filling an array with them.
