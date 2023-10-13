@@ -1,29 +1,26 @@
 // Question 2
 #include"main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 int main() {
-    int size;
+    int taille;
     printf("Enter the size of the array : ");
-    scanf("%d", &size);
+    scanf("%d", &taille);
 
-    int *tab = (int *)malloc(size * sizeof(int)); // Allocation de mémoire pour le tableau
+    int *tab = (int *)malloc(taille * sizeof(int)); // Allocation de mémoire pour le tableau
 
-   remplirTableauAvecEntiersAliqoire(tab, size, 1000000);// Remplissage du tableau avec des valeurs aléatoires
+   remplirTableauAvecEntiersAliqoire(tab, taille, 1000000);// Remplissage du tableau avec des valeurs aléatoires
 
     // Affichage du tableau (facultatif) avant le trie
     printf("The generated array :\n");
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < taille; i++) {
         printf("%d ", tab[i]);
     }
     // trie le tableau par selection
-    TriParSelection(tab, size);
+    TriParSelection(tab, taille);
 
     // Affichage du tableau (facultatif) apris le trie
     printf("\nThe array after sorting :\n");
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < taille; i++) {
         printf("%d ", tab[i]);
     }
 
