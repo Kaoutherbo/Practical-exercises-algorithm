@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 # Pratical-exercises-algorithm
 
+=======
+# Practical-exercises-algorithm
+>>>>>>> 07c34dd9a063c54d738121fcec78866a58dd133b
 This repository contains C programming exercises and their solutions. It demonstrates the following concepts:
 
 1. Generating random integers and filling an array with them.
@@ -8,10 +12,15 @@ This repository contains C programming exercises and their solutions. It demonst
 
 ## Table of Contents
 
+<<<<<<< HEAD
 
 - [Pratical-exercises-algorithm](#pratical-exercises-algorithm)
   - [Table of Contents](#table-of-contents)
   - [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
+=======
+ - [Project Structure](#project-structure)
+ - [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
+>>>>>>> 07c34dd9a063c54d738121fcec78866a58dd133b
     - [Problem Statement](#problem-statement)
     - [Solution](#solution)
       - [Code Explanation](#code-explanation)
@@ -21,8 +30,22 @@ This repository contains C programming exercises and their solutions. It demonst
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
     - [Usage](#usage-1)
-  - [Project Structure](#project-structure)
 
+## Project Structure :
+
+- **main.h:**
+  - **Purpose:** This is a header file that contains function prototypes for functions used in the project. It allows other source files to access these functions without having to define them again.
+
+- **fillArray.c:**
+  - **Purpose:** This source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
+
+- **selectionSort.c:**
+  - **Purpose:** This source file contains the implementation of the `TriParSelection` function, which is responsible for sorting an integer array using the selection sort algorithm.
+
+- **main.c:**
+  - **Purpose:** This is the main program file that acts as the entry point of your program. It includes user interface logic and coordinates the use of the functions defined in the other source files.
+
+ 
 ## Exercise 1: Random Array Generation
 
 ### Problem Statement
@@ -34,9 +57,12 @@ Write a C function that generates random integers and fills an array with them.
 - Postconditions: `tab` is filled with random integers between 0 (inclusive) and `ValeurMax` (excluding).
 
 ### Solution
-
+- `fillArray.c` : [fillArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
+- `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
+- `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
 #### Code Explanation
 
+<<<<<<< HEAD
 - `main.h`: Header file containing function prototypes.
 - `fillArray.c`: Implementation of the `remplirTableauAvecEntiersAliqoire` function.
   
@@ -50,6 +76,25 @@ gcc -o main main.c fillArray.c selectionSort.c -lm
 ./main
 ```
 
+=======
+- **Purpose:** The `fillArray.c` source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
+
+- **Contents:** The file includes the implementation of the `remplirTableauAvecEntiersAliqoire` function, which uses the `rand()` function and the `time(NULL)` function to generate random integers and fill an array with them.
+
+### Usage
+
+- Compile the code using a C compiler, and run the executable or you can use `terminal` to compile and run the files.
+  
+**Compile file** :
+```bash
+gcc -o main main.c fillArray.c selectionSort.c -lm
+```
+**Run file** :
+```bash
+./main
+```
+- The program will prompt you to enter the size of the array and then display the sorted array.
+>>>>>>> 07c34dd9a063c54d738121fcec78866a58dd133b
 
 ## Exercise 2: Selection Sort
 
@@ -61,18 +106,16 @@ Implement the selection sort algorithm to sort an integer array in ascending ord
 
 ### Solution
 
+- `selectionSort.c` : [selectionSort.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/selectionSort.c)
+- `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
+- `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
+  
 #### Code Explanation
 
-- `main.h`: Header file containing function prototypes.
-- `selectionSort.c`: Implementation of the selection sort algorithm.
+- **Purpose:** The `selectionSort.c` source file contains the implementation of the `TriParSelection` function, which sorts an integer array in ascending order using the selection sort algorithm.
+
+- **Contents:** The `TriParSelection` function iterates through the array to find the minimum element and swaps it with the element in the current position, gradually building a sorted array.
 
 ### Usage
 
 The selection sort function can be used to sort an integer array in ascending order.
-
-## Project Structure
-
-- `main.h`: Header file containing function prototypes.
-- `fillArray.c`: Implementation of the random array generation function.
-- `selectionSort.c`: Implementation of the selection sort function.
-- `main.c`: The main program that includes the user interface and calls the functions.
