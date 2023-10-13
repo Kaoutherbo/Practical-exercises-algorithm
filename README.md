@@ -28,8 +28,8 @@ Write a C function that generates random integers and fills an array with them.
 - Postconditions: `tab` is filled with random integers between 0 (inclusive) and `ValeurMax` (excluding).
 
 ### Solution
+[fillArray.cfile](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
 
-[fillArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
 #### Code Explanation
 
 - `main.h`: Header file containing function prototypes.
