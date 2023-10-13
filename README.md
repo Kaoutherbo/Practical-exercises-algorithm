@@ -6,9 +6,7 @@ This project contains C programming exercises and their solutions. It demonstrat
 
 ## Table of Contents
 
-- [Pratical-exercises-algorithm](#pratical-exercises-algorithm)
-  - [Table of Contents](#table-of-contents)
-  - [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
+ - [Exercise 1: Random Array Generation](#exercise-1-random-array-generation)
     - [Problem Statement](#problem-statement)
     - [Solution](#solution)
       - [Code Explanation](#code-explanation)
@@ -30,7 +28,7 @@ Write a C function that generates random integers and fills an array with them.
 - Postconditions: `tab` is filled with random integers between 0 (inclusive) and `ValeurMax` (excluding).
 
 ### Solution
-
+[fillArray.c file ](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/fillArray.c)
 #### Code Explanation
 
 - `main.h`: Header file containing function prototypes.
