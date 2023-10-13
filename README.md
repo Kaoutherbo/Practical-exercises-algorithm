@@ -1,5 +1,5 @@
 # Pratical-exercises-algorithm
-This project contains C programming exercises and their solutions. It demonstrates the following concepts:
+This repository contains C programming exercises and their solutions. It demonstrates the following concepts:
 
 1. Generating random integers and filling an array with them.
 2. Sorting an array using the selection sort algorithm.
@@ -28,17 +28,33 @@ Write a C function that generates random integers and fills an array with them.
 - Postconditions: `tab` is filled with random integers between 0 (inclusive) and `ValeurMax` (excluding).
 
 ### Solution
-[fillArray.cfile](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
-
+- `fillArray.c` : [fillArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
+- `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
+- `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
 #### Code Explanation
 
 - `main.h`: Header file containing function prototypes.
-- `fillArray.c`: Implementation of the `remplirTableauAvecEntiersAliqoire` function.
+- `fillArray.c`:
+#### Purpose:
+This source file contains the implementation of the `remplirTableauAvecEntiersAliqoire` function, which generates random integers and fills an array with them.
+#### Contents: 
+The file includes the implementation of the `remplirTableauAvecEntiersAliqoire` function. It uses the `rand()` function and the `time(NULL)` function to generate random integers and fill an array with them.
+
 - `main.c`: The main program that asks the user for the array size, allocates memory, fills the array with random integers, and displays the sorted array.
 
 ### Usage
 
-Compile the code using a C compiler, and run the executable. The program will prompt you to enter the size of the array and then display the sorted array.
+- Compile the code using a C compiler, and run the executable or you can use terminal to compile and run the files
+##### Compile file :
+
+```bash
+gcc -o main main.c fillArray.c selectionSort.c -lm
+```
+#####  Run file :
+```bash
+./main
+```
+- The program will prompt you to enter the size of the array and then display the sorted array.
 
 ## Exercise 2: Selection Sort
 
@@ -49,10 +65,15 @@ Implement the selection sort algorithm to sort an integer array in ascending ord
 
 ### Solution
 
+- `selectionSort.c` : [selectionSort.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/selectionSort.c)
+- `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
+- `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
+  
 #### Code Explanation
 
-- `main.h`: Header file containing function prototypes.
-- `selectionSort.c`: Implementation of the selection sort algorithm.
+- **Purpose:** The `selectionSort.c` source file contains the implementation of the `TriParSelection` function, which sorts an integer array in ascending order using the selection sort algorithm.
+
+- **Contents:** The `TriParSelection` function iterates through the array to find the minimum element and swaps it with the element in the current position, gradually building a sorted array.
 
 ### Usage
 
