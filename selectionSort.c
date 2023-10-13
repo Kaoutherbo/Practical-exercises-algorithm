@@ -12,7 +12,7 @@ void TriParSelection(int tab[], int taille)
                 min_index = j;
             }
         }
-        // Échange des éléments pour placer le minimum à la position i
+        // Swap the elements for make the minimum in the position of i 
         int temp = tab[i];
         tab[i] = tab[min_index];
         tab[min_index] = temp;

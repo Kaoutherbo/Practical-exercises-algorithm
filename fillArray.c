@@ -3,16 +3,10 @@
 
 void remplirTableauAvecEntiersAliaoire(int tab[], int taille, int ValeurMax)
 {
-     // Initialisation de la variable aléatoire
-    srand(time(NULL));
-
-    // Parcours du tableau
+    // Array traversal 
     for (int i = 0; i < taille; i++)
     {
-        // Génération d'un entier aléatoire
-        int entierAleatoire = rand() % ValeurMax;
-
-        // Ajout de l'entier aléatoire au tableau
-        tab[i] = entierAleatoire;
+        tab[i] = (int)(rand() / ((double)RAND_MAX + 1) * ValeurMax);
+        
     }
 }
