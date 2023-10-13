@@ -31,7 +31,7 @@ int main() {
     return 0;
 }
 
-// Frocedure to display the array 
+// Procedure to display the array 
 void displayArray(int *arr, int size, char *s)
 {
      printf("\n%s : \n", s);
