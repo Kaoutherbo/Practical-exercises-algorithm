@@ -29,6 +29,12 @@ This repository contains C programming exercises and their solutions. It demonst
 - **selectionSort.c:**
   - **Purpose:** This source file contains the implementation of the `TriParSelection` function, which is responsible for sorting an integer array using the selection sort algorithm.
 
+- **getSize.c:**
+  - **Purpose:** This source file is for get the size of the array .
+    
+- **displayArray.c:**
+  - **Purpose:** This source file is for display the element of the array.
+    
 - **main.c:**
   - **Purpose:** This is the main program file that acts as the entry point of your program. It includes user interface logic and coordinates the use of the functions defined in the other source files.
 
@@ -40,13 +46,15 @@ This repository contains C programming exercises and their solutions. It demonst
 Write a C function that generates random integers and fills an array with them.
 
 - Function Prototype: `void remplirTableauAvecEntiersAliqoire(int tab[], int taille, int ValeurMax)`.
-- Preconditions: `tab` is an array that can contain `taille` integers.
-- Postconditions: `tab` is filled with random integers between 0 (inclusive) and `ValeurMax` (excluding).
-- Use the function `rand()` from: `stdlib.h` The expression `(int)(rand() / ((double)RAND_MAX + 1) * valeur_max)` is used to generate a random integer within the range
-  [0, valeur_max] by scaling the output of the `rand()` function.
+- Preconditions: `arr` is an array that can contain `size` integers.
+- Postconditions: `arr` is filled with random integers between 0 (inclusive) and `maxValue` (excluding).
+- Use the function `rand()` from: `stdlib.h` The expression `(int)(rand() / ((double)RAND_MAX + 1) * maxValue)` is used to generate a random integer within the range
+  [0, maxValue] by scaling the output of the `rand()` function.
 
 ### Solution
 - `fillArray.c` : [fillArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
+- `getSize.c` : [getSize.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/getSize.c)
+- `displayArray.c` : [displayArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/displayArray.c)
 - `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
 - `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
 #### Code Explanation
@@ -58,8 +66,8 @@ Write a C function that generates random integers and fills an array with them.
     - `rand()`: This function generates random integers between 0 and a predefined maximum value `RAND_MAX`.
     - `(double)RAND_MAX + 1`: This converts the maximum value `RAND_MAX` to a double and adds 1. The addition of 1 ensures that when you divide `rand()` by this value, you obtain a floating point number between 0.0 (inclusive) and 1.0 (exclusive).
     - `rand() / ((double)RAND_MAX + 1)`: This part of the expression generates a random floating point number between 0.0 (inclusive) and 1.0 (exclusive). This number serves as a scaling factor for generating values within the desired range.
-    - `Multiplying by ValeurMax`: The random floating-point number from the previous step is then scaled to the desired range. 
-    - `(int)`: Finally, the result is cast to an integer. This conversion removes the decimal part of the floating point number, giving you a random integer within the specified range, in this case [0, ValeurMax).
+    - `Multiplying by maxValue`: The random floating-point number from the previous step is then scaled to the desired range. 
+    - `(int)`: Finally, the result is cast to an integer. This conversion removes the decimal part of the floating point number, giving you a random integer within the specified range, in this case [0, maxValue).
 
 ### Usage
 
@@ -67,7 +75,7 @@ Write a C function that generates random integers and fills an array with them.
   
 **Compile file** :
 ```bash
-gcc -o main main.c fillArray.c selectionSort.c -lm
+gcc -o main main.c fillArray.c selectionSort.c displayArray.c getSize.c -lm
 ```
 **Run file** :
 ```bash
@@ -81,11 +89,12 @@ gcc -o main main.c fillArray.c selectionSort.c -lm
 
 Implement the selection sort algorithm to sort an integer array in ascending order.
 
-- Function Prototype: `void TriParSelection(int tab[], int taille)`.
+- Function Prototype: `void TriParSelection(int maxValue[], int size)`.
 
 ### Solution
 
 - `selectionSort.c` : [selectionSort.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/selectionSort.c)
+- `displayArray.c` : [displayArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/displayArray.c)
 - `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
 - `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
   
