@@ -29,6 +29,12 @@ This repository contains C programming exercises and their solutions. It demonst
 - **selectionSort.c:**
   - **Purpose:** This source file contains the implementation of the `TriParSelection` function, which is responsible for sorting an integer array using the selection sort algorithm.
 
+- **getSize.c:**
+  - **Purpose:** This source file is for get the size of the array .
+    
+- **displayArray.c:**
+  - **Purpose:** This source file is for display the element of the array.
+    
 - **main.c:**
   - **Purpose:** This is the main program file that acts as the entry point of your program. It includes user interface logic and coordinates the use of the functions defined in the other source files.
 
