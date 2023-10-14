@@ -5,8 +5,8 @@
 #include <stdlib.h>
 #include <time.h>
 // Prototypes for every function in the project
-void remplirTableauAvecEntiersAliaoire(int tab[], int taille, int ValeurMax);
-void TriParSelection(int tab[], int taille);
+void remplirTableauAvecEntiersAliaoire(int arr[], int size, int maxValue);
+void TriParSelection(int arr[], int size);
 void displayArray(int* , int ,char*);
 int getSize(char *s);
 #endif
