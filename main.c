@@ -1,14 +1,13 @@
 // Question 2
 #include"main.h"
 
-void displayArray(int* , int ,char*);
-int getSize(char *s);
 
 int main() {
 
     int size = getSize("Enter the size of the array : ");
 
-    int *arr = (int *)malloc(size * sizeof(int)); // Memory allocation for the array 
+    // Memory allocation for the array
+    int *arr = (int *)malloc(size * sizeof(int));  
 
     if(arr == NULL)
     {
@@ -16,7 +15,8 @@ int main() {
         return -1;
     }
 
-   remplirTableauAvecEntiersAliaoire(arr, size, 1000000); // Filling the array whith random values
+    // Filling the array whith random values
+   remplirTableauAvecEntiersAliaoire(arr, size, 1000000); 
 
     // Display the array before sorting
     displayArray(arr , size , "The generated array");
@@ -29,31 +29,4 @@ int main() {
 
     free(arr); // Freeing allocated memory 
     return 0;
-}
-
-// Procedure to display the array 
-void displayArray(int *arr, int size, char *s)
-{
-     printf("\n%s : \n", s);
-    for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
-    }
-}
-
-// Function to get the size of the array
-int getSize(char *s)
-{
-    int size;
-    printf("%s", s);
-    scanf("%d", &size);
-
-    if(size <= 0)
-    {
-        printf("Error: The entered value is not valid.\n");
-        getSize(s);
-    }
-    else
-    {
-        return size ;    
-    }    
 }

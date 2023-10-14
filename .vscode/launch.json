@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/LENOVO/Documents/Problem solving/First-TP-Algorithm",
-      "program": "c:/Users/LENOVO/Documents/Problem solving/First-TP-Algorithm/build/Debug/outDebug",
+      "cwd": "c:/Users/LENOVO/Documents/Problem solving/Practical-exercises-algorithm",
+      "program": "c:/Users/LENOVO/Documents/Problem solving/Practical-exercises-algorithm/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

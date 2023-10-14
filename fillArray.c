@@ -1,12 +1,12 @@
 // Question 1
 #include "main.h"
 
-void remplirTableauAvecEntiersAliaoire(int tab[], int taille, int ValeurMax)
+void remplirTableauAvecEntiersAliaoire(int arr[], int size, int maxValue)
 {
     // Array traversal 
-    for (int i = 0; i < taille; i++)
+    for (int i = 0; i < size; i++)
     {
-        tab[i] = (int)(rand() / ((double)RAND_MAX + 1) * ValeurMax);
+        arr[i] = (int)(rand() / ((double)RAND_MAX + 1) * maxValue);
         
     }
 }

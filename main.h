@@ -5,5 +5,6 @@
 #include <time.h>
 void remplirTableauAvecEntiersAliaoire(int tab[], int taille, int ValeurMax);
 void TriParSelection(int tab[], int taille);
-
+void displayArray(int* , int ,char*);
+int getSize(char *s);
 #endif
