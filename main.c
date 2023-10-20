@@ -24,11 +24,8 @@ int main() {
     // Get the option for sorting array
     int option = getOption("Type 0 for Sorting by selection.\nType 1 for Sorting by insertion.");
 
-    // sort the array corresponding to user option
-    getUsageSort(arr,size,option);
-
-    // Display the array after sorting
-    displayArray(arr,size,"The array after sorting");
+    // sort the array corresponding to user option and display the array after sorting
+    printUsageSort(arr,size,option);
 
     free(arr); // Freeing allocated memory 
     return 0;
