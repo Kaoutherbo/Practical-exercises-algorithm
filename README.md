@@ -89,7 +89,7 @@ Write a C function that generates random integers and fills an array with them.
   
 **Compile file** :
 ```bash
-gcc -o main main.c fillArray.c selectionSort.c displayArray.c getSize.c -lm
+gcc -o main main.c fillArray.c selectionSort.c insertionSort.c displayArray.c getSize.c getOption.c printUsageSort.c
 ```
 **Run file** :
 ```bash
@@ -141,7 +141,7 @@ Implement the insertion sort algorithm to sort an integer array in ascending ord
 
 - **Purpose:** The `insertionSort.c` source file contains the implementation of the `insertionSort` function, which sorts an integer array in ascending order using the insertion sort algorithm.
 
-- **Contents:** The `insertionSort` function iterates through the array to find the minimum element and swaps it with the element in the current position, gradually building a sorted array.
+- **Contents:** The `insertionSort` function is a simple and efficient sorting algorithm. It works by dividing the input array into two parts: the left part, which is initially empty and will gradually be filled with sorted elements, and the right part, which contains the unsorted elements. The algorithm iterates through the array to find the minimum element in the unsorted part and swaps it with the element in the current position. This process gradually builds a sorted array on the left.
 
 ### Usage
 
