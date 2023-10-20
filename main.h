@@ -10,4 +10,6 @@ void TriParSelection(int arr[], int size);
 void insertionSort(int* arr, int size);
 void displayArray(int* , int ,char*);
 int getSize(char *s);
+void getUsageSort(int *arr, int size, int option);
+
 #endif
