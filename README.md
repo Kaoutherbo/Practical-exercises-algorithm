@@ -3,7 +3,8 @@
 This repository contains C programming exercises and their solutions. It demonstrates the following concepts:
 1. Generating random integers and filling an array with them.
 2. Sorting an array using the selection sort algorithm.
-
+3. Sorting an array using the insertion sort algorithm.
+   
 ## Table of Contents
 
 - [Project Structure](#project-structure)
