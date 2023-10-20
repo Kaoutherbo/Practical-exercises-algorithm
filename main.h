@@ -7,6 +7,7 @@
 // Prototypes for every function in the project
 void remplirTableauAvecEntiersAliaoire(int arr[], int size, int maxValue);
 void TriParSelection(int arr[], int size);
+void insertionSort(int* arr, int size);
 void displayArray(int* , int ,char*);
 int getSize(char *s);
 #endif
