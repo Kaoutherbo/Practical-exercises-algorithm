@@ -68,6 +68,8 @@ Write a C function that generates random integers and fills an array with them.
 ### Solution
 - `fillArray.c` : [fillArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/fillArray.c)
 - `getSize.c` : [getSize.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/getSize.c)
+- `getOption.c` : [getSize.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/getOption.c)
+- `printUsageSort.c` : [getSize.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/printUsageSort.c)
 - `displayArray.c` : [displayArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/displayArray.c)
 - `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
 - `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
