@@ -17,6 +17,11 @@ This repository contains C programming exercises and their solutions. It demonst
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
     - [Usage](#usage-1)
+- [Exercise 2: Insertion Sort](#exercise-2-selection-sort)
+    - [Problem Statement](#problem-statement-1)
+    - [Solution](#solution-1)
+      - [Code Explanation](#code-explanation-1)
+    - [Usage](#usage-2)
 
 ## Project Structure :
 
