@@ -21,9 +21,11 @@ int main() {
     // Display the array before sorting
     displayArray(arr , size , "The generated array");
 
+    // Get the option for sorting array
     int option = getOption("Type 0 for Sorting by selection.\nType 1 for Sorting by insertion.");
 
-    printUsageSort(arr,size,option);
+    // sort the array corresponding to user option
+    getUsageSort(arr,size,option);
 
     // Display the array after sorting
     displayArray(arr,size,"The array after sorting");
