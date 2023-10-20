@@ -22,7 +22,7 @@ int main() {
     displayArray(arr , size , "The generated array");
 
     // Get the option for sorting array
-    int option = getOption("Type 0 for Sorting by selection.\nType 1 for Sorting by insertion.");
+    int option = getOption("\nType 0 for Sorting by selection.\nType 1 for Sorting by insertion.");
 
     // sort the array corresponding to user option and display the array after sorting
     printUsageSort(arr,size,option);

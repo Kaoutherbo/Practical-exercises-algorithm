@@ -1,6 +1,5 @@
 #include"main.h"
 
-
 void printUsageSort(int *arr, int size, int option)
 {
     
