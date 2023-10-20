@@ -21,8 +21,9 @@ int main() {
     // Display the array before sorting
     displayArray(arr , size , "The generated array");
 
-    // Sort the array whith selection
-     TriParSelection(arr, size);
+    int option = getOption("Type 0 for Sorting by selection.\nType 1 for Sorting by insertion.");
+
+    printUsageSort(arr,size,option);
 
     // Display the array after sorting
     displayArray(arr,size,"The array after sorting");
