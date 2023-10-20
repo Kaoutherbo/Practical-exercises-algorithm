@@ -17,7 +17,7 @@ This repository contains C programming exercises and their solutions. It demonst
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
     - [Usage](#usage-1)
-- [Exercise 2: Insertion Sort](#exercise-2-selection-sort)
+- [Exercise 3: Insertion Sort](#exercise-2-selection-sort)
     - [Problem Statement](#problem-statement-1)
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
@@ -103,7 +103,7 @@ gcc -o main main.c fillArray.c selectionSort.c displayArray.c getSize.c -lm
 
 Implement the selection sort algorithm to sort an integer array in ascending order.
 
-- Function Prototype: `void TriParSelection(int maxValue[], int size)`.
+- Function Prototype: `void TriParSelection(int *arr, int size)`.
 
 ### Solution
 
@@ -121,3 +121,29 @@ Implement the selection sort algorithm to sort an integer array in ascending ord
 ### Usage
 
 The selection sort function can be used to sort an integer array in ascending order.
+
+## Exercise 3: Insertion Sort
+
+### Problem Statement
+
+Implement the insertion sort algorithm to sort an integer array in ascending order.
+
+- Function Prototype: `void insetionSort(int *arr, int size)`.
+
+### Solution
+
+- `insertionSort.c` : [insertionSort.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/insertionSort.c)
+- `displayArray.c` : [displayArray.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/displayArray.c)
+- `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
+- `main.h`: [main.h file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.h)
+  
+#### Code Explanation
+
+- **Purpose:** The `insertionSort.c` source file contains the implementation of the `insertionSort` function, which sorts an integer array in ascending order using the insertion sort algorithm.
+
+- **Contents:** The `insertionSort` function iterates through the array to find the minimum element and swaps it with the element in the current position, gradually building a sorted array.
+
+### Usage
+
+The insertion sort function can be used to sort an integer array in ascending order.
+
