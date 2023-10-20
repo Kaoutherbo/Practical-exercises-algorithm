@@ -42,7 +42,6 @@ This repository contains C programming exercises and their solutions. It demonst
     
 - **printUsageSort.c:**
   - **Purpose:** This source file contains the implementation of the `printUsageSort` function, which is responsible for sorting due to user option and diplay its elements after sorting .
-   
     
 - **displayArray.c:**
   - **Purpose:** This source file is for display the element of the array.
