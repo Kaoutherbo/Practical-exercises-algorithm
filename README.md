@@ -150,3 +150,13 @@ Implement the insertion sort algorithm to sort an integer array in ascending ord
 
 The insertion sort function can be used to sort an integer array in ascending order.
 
+## Exercise 4: Measuring Execution Time
+
+### Problem Statement
+
+In this exercise, we will add code to measure the execution time of the sorting algorithms used in the previous exercises. we use the `time.h` library to calculate the execution time of each sorting algorithm.
+
+### Solution
+
+To measure the execution time of the sorting algorithms, we use the `clock()` function from the `time.h` library. 
+
