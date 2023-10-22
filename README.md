@@ -166,3 +166,7 @@ In this exercise, we will add code to measure the execution time of the sorting 
 
 To measure the execution time of the sorting algorithms, we use the `clock()` function from the `time.h` library. 
 
+- `main.c`: [main.c file](https://github.com/Kaoutherbo/Pratical-exercises-algorithm/blob/main/main.c)
+### Usage
+
+Compile and run the program as described in the README.md to see the execution time measurements for the sorting algorithms.
