@@ -1,4 +1,3 @@
-
 # Practical exercises algorithm
 
 This repository contains C programming exercises and their solutions. It demonstrates the following concepts:
