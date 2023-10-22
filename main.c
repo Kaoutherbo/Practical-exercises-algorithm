@@ -1,7 +1,6 @@
 // Question 2
 #include"main.h"
 
-
 int main() {
 
     int size = getSize("Enter the size of the array : ");
