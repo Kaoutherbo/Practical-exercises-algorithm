@@ -1,7 +1,10 @@
 // Question 2
 #include"main.h"
+#include <time.h>
 
 int main() {
+    // Record time started
+    clock_t start = clock();
 
     int size = getSize("Enter the size of the array : ");
 
@@ -27,5 +30,10 @@ int main() {
     printUsageSort(arr,size,option);
 
     free(arr); // Freeing allocated memory 
+
+    // Record time finished
+    clock_t finish = clock(); 
+    printf("It took %d seconds to execute the program.\n", (finish - start) / CLOCKS_PER_SEC);
+
     return 0;
 }
