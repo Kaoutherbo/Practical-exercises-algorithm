@@ -4,7 +4,8 @@ This repository contains C programming exercises and their solutions. It demonst
 1. Generating random integers and filling an array with them.
 2. Sorting an array using the selection sort algorithm.
 3. Sorting an array using the insertion sort algorithm.
-   
+4. Add code to measure the execution time of the sorting algorithms.
+    
 ## Table of Contents
 
 - [Project Structure](#project-structure)
@@ -18,7 +19,12 @@ This repository contains C programming exercises and their solutions. It demonst
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
     - [Usage](#usage-1)
-- [Exercise 3: Insertion Sort](#exercise-2-selection-sort)
+- [Exercise 3: Insertion Sort](#exercise-2-insertion-sort)
+    - [Problem Statement](#problem-statement-1)
+    - [Solution](#solution-1)
+      - [Code Explanation](#code-explanation-1)
+    - [Usage](#usage-2)
+- [Exercise 4: Measure the execution time](#exercise--selection-sort)
     - [Problem Statement](#problem-statement-1)
     - [Solution](#solution-1)
       - [Code Explanation](#code-explanation-1)
