@@ -20,15 +20,15 @@ This repository contains C programming exercises and their solutions. It demonst
       - [Code Explanation](#code-explanation-1)
     - [Usage](#usage-1)
 - [Exercise 3: Insertion Sort](#exercise-2-insertion-sort)
-    - [Problem Statement](#problem-statement-1)
-    - [Solution](#solution-1)
-      - [Code Explanation](#code-explanation-1)
+    - [Problem Statement](#problem-statement-2)
+    - [Solution](#solution-2)
+      - [Code Explanation](#code-explanation-2)
     - [Usage](#usage-2)
 - [Exercise 4: Measure the execution time](#exercise--selection-sort)
-    - [Problem Statement](#problem-statement-1)
-    - [Solution](#solution-1)
-      - [Code Explanation](#code-explanation-1)
-    - [Usage](#usage-2)
+    - [Problem Statement](#problem-statement-3)
+    - [Solution](#solution-3)
+      - [Code Explanation](#code-explanation-3)
+    - [Usage](#usage-3)
 
 ## Project Structure :
 
